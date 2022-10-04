@@ -1,0 +1,93 @@
+.card {
+    background-color: var(--background-cards);
+    color: white;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition-property: left, background-color;
+    transition-duration: .4s, .4s;
+    transition-timing-function: ease, ease-out;
+    transition-delay: 0s, .4s;
+}
+
+.card:hover {
+    left: 400px;
+    color: black;
+    background-color: rgb(243, 143, 107);
+}
+
+.card_header {
+    position: relative;
+}
+
+
+.card_container-status {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-cards);
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+    font-size: 14px;
+    display: flex;
+    gap: 8px;
+}
+
+.card_circle-status {
+    width: 14px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.Dead {
+    background-color: red;
+}
+
+.unknown {
+    background-color: #aaa;
+}
+
+.Alive {
+    background-color: green;
+}
+
+.card_body {
+    padding: 20px;
+}
+
+.card_name {
+    font-weight: 500;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.card_list {
+    display: grid;
+    gap: 14px;
+}
+
+.card_item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-weight: 500;
+}
+
+.card_list {
+    color: #cc9;
+    transform: translateX(10px);
+}
+
+
+@keyframes card {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
